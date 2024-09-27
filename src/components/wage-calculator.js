@@ -1,4 +1,13 @@
+import {useState} from 'react';
+
 const wageCalculator = () =>{
+
+const [ income, setIncome ] = useState(0);
+const [ rentMortgage, setRentMortgage ] = useState(0);
+const [ groceries, setGroceries ] = useState(0);
+const [ insurances, setInsuranes ] = useState(0);
+const [ studentLoans, setStudentLoans ] = useState(0);
+const [ccPayments, setCcPayments] = useState(0);
 
 
 return (
@@ -10,7 +19,7 @@ return (
         </div>
         <div className='costs'>
           <p>Rent or Mortgage</p>
-          <input className='rent-or-morgage' placeholder='Rent or Mortgage'></input>
+          <input className='rent-or-mortgage' placeholder='Rent or Mortgage'></input>
           <p>Groceries</p>
           <input className='groceries' placeholder='Groceries'></input>
           <p>Insurances</p>
